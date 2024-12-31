@@ -3,7 +3,7 @@ on: push
 
 jobs:
     first_job: 
-      runs-on: ubuntu-lastest
+      runs-on: ubuntu-latest
       steps: 
       - name: welcome message 
         run: echo "my first Github Job"
