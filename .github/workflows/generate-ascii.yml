@@ -7,11 +7,13 @@ jobs:
       steps: 
       - name: checkout repo
         uses: actions/checkout@v4
-        
+
       - name: list file
         run: ls -ltra
 
       - name: Excuting shell script
-        run: ./ascii-script.sh
+        run: |
+            chmod +x ascii-script.sh
+            ./ascii-script.sh
 
       
